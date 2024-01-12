@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .profile-card {
+            border: 2px solid #FF6347; ;
+            width: 400px;
+            margin: 40px auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-weight: 500;
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            margin: 20px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-card-header {
+            padding: 20px;
+        }
+
+        .profile-card-footer {
+            padding: 20px;
+            border-top: 2px solid #FF6347; ;
+        }
+
+        .desc {
+            color: #696969;
+            font-size: 16px;
+        }
+
+        .btn {
+            background: #6495ED;
+            border: none;
+            font-size: 20px;
+            color: #FFF8DC;
+            border-radius: 12px;
+            padding: 10px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-card-header">
+            <h1>Your profile</h1>
+            <p class="desc">See how your different profile appear in Google services</p>
+            <div class="img-container">
+                <img
+                    src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1703096307~exp=1703096907~hmac=77ad9d355dc4e5fa7b716f0458c8b4ea9b2aa3fcbe90d018863bb95a24fe6076" />
+                <img
+                    src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=900&t=st=1703096390~exp=1703096990~hmac=425b17ee1bd2059dc114d67afe0129e2f76eb161bebcb0e7c7348786e81e1c1f" />
+            </div>
+        </div>
+        <div class="profile-card-footer">
+            <button class="btn">See profiles</button>
+        </div>
+    </div>
+</body>
+</html>
