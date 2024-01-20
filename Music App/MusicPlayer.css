@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom right, #ff8c00, #ff0000);
+}
+
+.music-player {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+.song-list-container {
+  max-height: 200px;
+  max-width:500px; /* Set the maximum height for the scroll box */
+  overflow-y: auto;
+  overflow-x: auto; /* Enable vertical scrolling */
+}

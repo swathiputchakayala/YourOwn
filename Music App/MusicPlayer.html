@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./MusicPlayer.css">
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="music-player">
+    <input type="file" id="fileInput" accept="audio/*" multiple>
+    <audio id="audio" controls></audio>
+    <div class="controls">
+      <button id="playPause" onclick="togglePlayPause()">Play</button>
+      <button id="loopSingle" onclick="toggleLoop('single')">Loop Single</button>
+      <button id="loopLinear" onclick="toggleLoop('linear')">Loop Linear</button>
+      <button id="loopRandom" onclick="toggleLoop('random')">Loop Random</button>
+    </div>
+    <div class="song-info">
+      <h3>Now Playing:</h3>
+      <p id="currentSong">No song selected</p>
+      <h3>Song List:</h3>
+      <div class="song-list-container">
+        <ul id="songList"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="./MusicPlayer.js"></script>
+</body>
+</html>
